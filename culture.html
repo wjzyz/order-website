@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>企业文化</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<!-- Mobile Devices Support @begin -->
+<meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+<meta content="no-cache" http-equiv="pragma">
+<meta content="0" http-equiv="expires">
+<meta content="telephone=no, address=no" name="format-detection">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- apple devices fullscreen -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<!-- Mobile Devices Support @end -->
+<link rel="stylesheet" type="text/css" href="FortAwesome/docs/assets/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+   var _global = {};
+	   _global.spm = {};
+	   
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {WeixinJSBridge.call('hideToolbar');});
+</script>
+<script type="text/javascript" src="js/swipe.js"></script>
+<script type="text/javascript">
+		$(function(){
+			new Swipe(document.getElementById('banner_box'), {
+				speed:500,
+				auto:3000,
+				callback: function(){
+					var lis = $(this.element).next("ol").children();
+					lis.removeClass("on").eq(this.index).addClass("on");
+				}
+			});
+		});
+</script>
+</head>
+
+<body>
+<div class="body">
+  <p class="logo clearfix"><span class="floatl"><img src="images/logo.png" alt="logo"></span><em class="floatl"><img src="images/sybar.jpg" alt=""></em></p>
+  <div class="banner clearfix">
+    <div style="-webkit-transform:translate3d(0,0,0);">
+      <div id="banner_box" class="box_swipe">
+        <ul>
+          <li> <a onclick="return false;"> <img src="images/culimg1.jpg" alt="企业文化广告图" style="width:100%;" /> </a> </li>
+          <li> <a onclick="return false;"> <img src="images/banner.jpg" alt="企业文化广告图" style="width:100%;" /> </a> </li>
+        </ul>
+        <ol>
+          <li class="on"></li>
+          <li ></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="culture">
+    <h3 class="tit">企业文化</h3>
+    <div class="cul-intro">
+      <p>小坛子商务信息咨询有限公司成立于沈阳，是东北地区唯一一家对企业进行网络营销实战培训的机构，致力于企业网络领域中成功管理方法的研究，探寻成功网商成长中的实战方法，为成长中企业的不断创新提供专业、贴身的网络咨询服务。</p>
+    </div>
+    <h3 class="tit">团队展示</h3>
+    <div class="cul-intro">
+      <p><img src="images/culimg2.jpg" alt="团队展示"></p>
+    </div>
+    <h3 class="tit">经营理念</h3>
+    <div class="cul-intro">
+      <p>小坛子商务信息咨询有限公司成立于沈阳，是东北地区唯一一家对企业进行网络营销实战培训的机构，致力于企业网络领域中成功管理方法的研究，探寻成功网商成长中的实战方法，为成长中企业的不断创新提供专业、贴身的网络咨询服务。</p>
+    </div>
+  </div>
+  <!--culture--> 
+  
+  <!--下导航-->
+  <div class="js-navmenu nav-on-bottom style-2">
+    <div class="nav-menu has-menu-3"> <a href="/index.html" class="icon-home"></a>
+      <div class="divide">&nbsp;</div>
+      <div class="one"> <a class="mainmenu js-mainmenu" href="javascript:void(0);"> <i class="arrow-weixin"></i> 菜品 </a>
+        <div class="submenu js-submenu"> <span class="arrow before-arrow"></span> <span class="arrow after-arrow"></span>
+          <ul>
+            <li> <a href="foodlist.html"> 火锅 </a> </li>
+            <li> <a href="foodlist.html"> 地方菜 </a> </li>
+            <li> <a href="foodlist.html"> 西餐 </a> </li>
+            <li> <a href="foodlist.html"> 快餐 </a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="divide">&nbsp;</div>
+      <div class="one"> <a class="mainmenu js-mainmenu" href="javascript:void(0);"> <i class="arrow-weixin"></i> 订位 </a>
+        <div class="submenu js-submenu"> <span class="arrow before-arrow"></span> <span class="arrow after-arrow"></span>
+          <ul>
+            <li> <a href="foodlist.html"> 我要订位 </a> </li>
+            <li> <a href="membercenter.html"> 会员中心 </a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="divide">&nbsp;</div>
+      <div class="one"> <a class="mainmenu js-mainmenu" href="javascript:void(0);"> <i class="arrow-weixin"></i> VIP </a>
+        <div class="submenu js-submenu"> <span class="arrow before-arrow"></span> <span class="arrow after-arrow"></span>
+          <ul>
+            <li> <a href="register.html"> 我要成为VIP </a> </li>
+            <li> <a href="score.html"> 积分兑换 </a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="divide">&nbsp;</div>
+      <div class="one"> <a class="mainmenu js-mainmenu" href="javascript:void(0);"> <i class="arrow-weixin"></i> 订单 </a>
+        <div class="submenu js-submenu"> <span class="arrow before-arrow"></span> <span class="arrow after-arrow"></span>
+          <ul>
+            <li> <a href="order.html"> 我的订单 </a> </li>
+          </ul>
+        </div>
+        <!--submenu js-submenu--> 
+      </div>
+      <!--one--> 
+    </div>
+  </div>
+  <!--nav-on-bottom下导航结束--> 
+</div>
+<!--body-->
+<script type="text/javascript" src="js/wap.min.js"></script>
+</body>
+</html>

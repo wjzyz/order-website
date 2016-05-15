@@ -1,0 +1,37 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>无标题页</title>
+
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>	
+
+    <script type="text/javascript">
+       
+     $("#contain").scroll(function(){  
+         var $this =$(this),  
+         viewH =$(this).height(),//可见高度  
+         contentH =$(this).get(0).scrollHeight,//内容高度  
+         scrollTop =$(this).scrollTop();//滚动高度  
+        //if(contentH - viewH - scrollTop <= 100) { //到达底部100px时,加载新内容  
+        if(scrollTop/(contentH -viewH)>=0.95){ //到达底部100px时,加载新内容  
+            alert('1111');// 这里加载数据..  
+        }  
+     });  
+  
+    
+    </script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height: 3000px; background-color: Blue;" id="contain">
+    </div>
+    </form>
+</body>
+</html>
+
+
+
+

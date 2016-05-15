@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>会员中心</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<!-- Mobile Devices Support @begin -->
+<meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+<meta content="no-cache" http-equiv="pragma">
+<meta content="0" http-equiv="expires">
+<meta content="telephone=no, address=no" name="format-detection">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- apple devices fullscreen -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<!-- Mobile Devices Support @end -->
+<link rel="stylesheet" type="text/css" href="FortAwesome/docs/assets/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript">
+   var _global = {};
+	   _global.spm = {};
+	   
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {WeixinJSBridge.call('hideToolbar');});
+</script>
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){	
+$(".dci").click( function () { 
+$(this).toggleClass("selected");
+ }); 
+});
+</script>
+</head>
+
+<body>
+<div class="body">
+  <div class="mem-top clearfix">
+  	<em class="floatl mem-img"><img src="images/memimg.jpg" width="100%" alt="头像"></em>
+    <div class="mem-intro floatr">
+    	<p><b>hatakei</b></p>
+        <p>账户余额：<strong>0元</strong></p>
+        <p><a href="card.html">我的VIP会员卡</a>，我还不是VIP，<br /><a href="register.html">申请成为VIP</a></p>
+    </div><!--mem-intro-->    
+  </div><!--mem-top-->
+  <dl class="mem-orderlist mem">
+  	<dt>订单</dt>
+    <dd>
+    	<p><a href="ordering.html" class="clearfix"><span class="floatl"><i class="icon-pencil"></i>预定中</span><em class="floatr">0<i class="icon-chevron-right"></i></em></a></p>
+        <p><a href="yichengjiao.html" class="clearfix"><span class="floatl"><i class="icon-check"></i>已成交</span><em class="floatr">0<i class="icon-chevron-right"></i></em></a></p>
+        <p><a href="weichengjiao.html" class="clearfix"><span class="floatl"><i class="icon-check-empty"></i>未成交</span><em class="floatr">0<i class="icon-chevron-right"></i></em></a></p>
+    </dd>
+  </dl>
+  <dl class="mem-score mem">
+  	<dt>会员积分</dt>
+    <dd>
+    	<p><a href="jifenlieb.html" class="clearfix"><span class="floatl"><i class="icon-money"></i>现有积分：<b class="orange">912</b></span><em class="floatr">积分记录<i class="icon-chevron-right"></i></em></a></p>
+        <p><a href="jifenhuodong.html" class="clearfix"><span class="floatl"><i class="icon-gift"></i>积分活动</span><em class="floatr"><i class="icon-chevron-right"></i></em></a></p>
+        <p><a href="jifenguize.html" class="clearfix"><span class="floatl"><i class="icon-book"></i>积分规则</span><em class="floatr"><i class="icon-chevron-right"></i></em></a></p>
+    </dd>
+  </dl>
+  <dl class="mem-set mem">
+  	<dt>账户设置</dt>
+    <dd>
+    	<p><a href="xiugaiyonghuming.html" class="clearfix"><span class="floatl"><i class="icon-user"></i>hatakei</span><em class="floatr">修改<i class="icon-chevron-right"></i></em></a></p>
+        <p><a href="xiugaimima.html" class="clearfix"><span class="floatl"><i class="icon-edit"></i>修改密码</span><em class="floatr">0<i class="icon-chevron-right"></i></em></a></p>        
+    </dd>
+  </dl>
+  <!--下导航-->
+  <div class="js-navmenu nav-on-bottom style-2">
+    <div class="nav-menu has-menu-3"> <a href="/index.html" class="icon-home"></a>
+      <div class="divide">&nbsp;</div>
+      <div class="one"> <a class="mainmenu js-mainmenu" href="javascript:void(0);"> <i class="arrow-weixin"></i> 菜品 </a>
+        <div class="submenu js-submenu"> <span class="arrow before-arrow"></span> <span class="arrow after-arrow"></span>
+          <ul>
+            <li> <a href="foodlist.html"> 火锅 </a> </li>
+            <li> <a href="foodlist.html"> 地方菜 </a> </li>
+            <li> <a href="foodlist.html"> 西餐 </a> </li>
+            <li> <a href="foodlist.html"> 快餐 </a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="divide">&nbsp;</div>
+      <div class="one"> <a class="mainmenu js-mainmenu" href="javascript:void(0);"> <i class="arrow-weixin"></i> 订位 </a>
+        <div class="submenu js-submenu"> <span class="arrow before-arrow"></span> <span class="arrow after-arrow"></span>
+          <ul>
+            <li> <a href="foodlist.html"> 我要订位 </a> </li>
+            <li> <a href="membercenter.html"> 会员中心 </a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="divide">&nbsp;</div>
+      <div class="one"> <a class="mainmenu js-mainmenu" href="javascript:void(0);"> <i class="arrow-weixin"></i> VIP </a>
+        <div class="submenu js-submenu"> <span class="arrow before-arrow"></span> <span class="arrow after-arrow"></span>
+          <ul>
+            <li> <a href="register.html"> 我要成为VIP </a> </li>
+            <li> <a href="score.html"> 积分兑换 </a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="divide">&nbsp;</div>
+      <div class="one"> <a class="mainmenu js-mainmenu" href="javascript:void(0);"> <i class="arrow-weixin"></i> 订单 </a>
+        <div class="submenu js-submenu"> <span class="arrow before-arrow"></span> <span class="arrow after-arrow"></span>
+          <ul>
+            <li> <a href="order.html"> 我的订单 </a> </li>
+          </ul>
+        </div>
+        <!--submenu js-submenu--> 
+      </div>
+      <!--one--> 
+    </div>
+  </div>
+  <!--nav-on-bottom下导航结束--> 
+</div>
+<!--body--> 
+
+<script type="text/javascript" src="js/wap.min.js"></script>
+</body>
+</html>

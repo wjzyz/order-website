@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>菜品详细页</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<!-- Mobile Devices Support @begin -->
+<meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+<meta content="no-cache" http-equiv="pragma">
+<meta content="0" http-equiv="expires">
+<meta content="telephone=no, address=no" name="format-detection">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- apple devices fullscreen -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<!-- Mobile Devices Support @end -->
+<link rel="stylesheet" type="text/css" href="FortAwesome/docs/assets/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript">
+   var _global = {};
+	   _global.spm = {};
+	   
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {WeixinJSBridge.call('hideToolbar');});
+</script>
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){	
+$(".dci").click( function () { 
+$(this).toggleClass("selected");
+ }); 
+});
+</script>
+</head>
+
+<body>
+
+<div class="body">
+<div class="topsearch">
+<form class="clearfix">
+      <input type="submit" class="sbtn icon-search">
+      <input type="text" name="keys" id="keys" class="stxt" onfocus="if (value==defaultValue)value=''" onblur="if(!value)value=defaultValue" value="寻找菜品、店面" >
+      <a href="order.html" title="我的订单" class="floatr"></a>
+</form>
+</div><!--topsearch-->
+<div class="container">
+	<ul class="assort clearfix">
+    	<li class="ast1 floatl ast-cur"><a href="#">全部<i class="icon-caret-down"></i></a></li>
+        <li class="ast2 floatl"><a href="#">特色菜<i class="icon-caret-down"></i></a></li>
+        <li class="ast3 floatl"><a href="#">店长推荐<i class="icon-caret-down"></i></a></li>
+        <li class="ast4 floatl"><a href="#">精品上市<i class="icon-caret-down"></i></a></li>
+    </ul><!--assort-->
+    <div class="food-content">
+    <h3 class="fn-tit"><a href="javascript:history.go(-1);" class="nback">返回</a><b class="tit">惠心上品斑鱼火锅</b></h3>
+    <div class="fn-img"><img src="images/cppic.jpg" alt="菜品图片"></div>
+    <div class="fn-intro">
+    	<p>单价：<b>￥38</b><span class="fts orange">VIP：￥0.1</span></p>
+        <p>制作时间：<b>10分钟</b><span>可获积分：<b>380分</b></span></p>
+        <p>特点：<b>鲜嫩可口,回味无穷~</b></p>
+        <p class="btn fts clearfix"><a href="order.html" class="floatl">点菜</a><i class="icon-ok floatl dci"></i></p>
+    </div><!--fn-intro-->
+    <h2 class="comment-tit clearfix"><b class="floatl">客户评价</b><a href="#cform" class="floatr"><i class="icon-comment"></i>我要评价</a></h2>
+    <ul class="comment-list" id="clist">
+    	<li>
+        	<h4><i class="icon-comment-alt"></i><span>蓝君言</span><em>5分钟前</em></h4>
+            <p>这个菜我每次必点，绝对的好吃~</p>
+        </li>
+        <li>
+        	<h4><i class="icon-comment-alt"></i><span>蓝君言</span><em>5分钟前</em></h4>
+            <p>这个菜我每次必点，绝对的好吃~</p>
+        </li>
+        <li>
+        	<h4><i class="icon-comment-alt"></i><span>蓝君言</span><em>5分钟前</em></h4>
+            <p>这个菜我每次必点，绝对的好吃~</p>
+        </li>
+        <li>
+        	<h4><i class="icon-comment-alt"></i><span>蓝君言</span><em>5分钟前</em></h4>
+            <p>这个菜我每次必点，绝对的好吃~</p>
+        </li>
+        <li>
+        	<h4><i class="icon-comment-alt"></i><span>蓝君言</span><em>5分钟前</em></h4>
+            <p>这个菜我每次必点，绝对的好吃~</p>
+        </li>
+        <li>
+        	<h4><i class="icon-comment-alt"></i><span>蓝君言</span><em>5分钟前</em></h4>
+            <p>这个菜我每次必点，绝对的好吃~</p>
+        </li>
+        <li>
+        	<h4><i class="icon-comment-alt"></i><span>蓝君言</span><em>5分钟前</em></h4>
+            <p>这个菜我每次必点，绝对的好吃~</p>
+        </li>
+    </ul>
+    <h2 class="comment-tit clearfix" id="cform"><b class="floatl">我要评价</b><a href="#clist" class="floatr"><i class="icon-comment"></i>看看别人的评价</a></h2>
+    <form class="comment-form">
+    	<p><input type="text" placeholder="昵称"></p>
+        <p><textarea rows="4" name="xuqiu" placeholder="请输入您的评价"></textarea></p>
+        <p><button type="submit" class="orange-btn">提 交</button></p>
+    </form>
+    </div><!--food-content-->
+    
+</div><!--container-->
+<!--下导航-->
+      <div class="js-navmenu nav-on-bottom style-2">
+    <div class="nav-menu has-menu-3"> <a href="/index.html" class="icon-home"></a>
+      <div class="divide">&nbsp;</div>
+      <div class="one"> <a class="mainmenu js-mainmenu" href="javascript:void(0);"> <i class="arrow-weixin"></i> 菜品 </a>
+        <div class="submenu js-submenu"> <span class="arrow before-arrow"></span> <span class="arrow after-arrow"></span>
+          <ul>
+            <li> <a href="foodlist.html"> 火锅 </a> </li>
+            <li> <a href="foodlist.html"> 地方菜 </a> </li>
+            <li> <a href="foodlist.html"> 西餐 </a> </li>
+            <li> <a href="foodlist.html"> 快餐 </a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="divide">&nbsp;</div>
+      <div class="one"> <a class="mainmenu js-mainmenu" href="javascript:void(0);"> <i class="arrow-weixin"></i> 订位 </a>
+        <div class="submenu js-submenu"> <span class="arrow before-arrow"></span> <span class="arrow after-arrow"></span>
+          <ul>
+            <li> <a href="foodlist.html"> 我要订位 </a> </li>
+            <li> <a href="membercenter.html"> 会员中心 </a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="divide">&nbsp;</div>
+      <div class="one"> <a class="mainmenu js-mainmenu" href="javascript:void(0);"> <i class="arrow-weixin"></i> VIP </a>
+        <div class="submenu js-submenu"> <span class="arrow before-arrow"></span> <span class="arrow after-arrow"></span>
+          <ul>
+            <li> <a href="register.html"> 我要成为VIP </a> </li>
+            <li> <a href="score.html"> 积分兑换 </a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="divide">&nbsp;</div>
+      <div class="one"> <a class="mainmenu js-mainmenu" href="javascript:void(0);"> <i class="arrow-weixin"></i> 订单 </a>
+        <div class="submenu js-submenu"> <span class="arrow before-arrow"></span> <span class="arrow after-arrow"></span>
+          <ul>
+            <li> <a href="order.html"> 我的订单 </a> </li>
+          </ul>
+        </div>
+        <!--submenu js-submenu--> 
+      </div>
+      <!--one--> 
+    </div>
+  </div>
+  <!--nav-on-bottom下导航结束-->  
+</div><!--body-->
+<script type="text/javascript" src="js/wap.min.js"></script> 
+</body>
+</html>

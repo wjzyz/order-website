@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>首页</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<!-- Mobile Devices Support @begin -->
+<meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+<meta content="no-cache" http-equiv="pragma">
+<meta content="0" http-equiv="expires">
+<meta content="telephone=no, address=no" name="format-detection">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- apple devices fullscreen -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<!-- Mobile Devices Support @end -->
+<link rel="stylesheet" type="text/css" href="FortAwesome/docs/assets/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/swipe.js"></script>
+<script type="text/javascript">
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {WeixinJSBridge.call('hideToolbar');});
+		$(function(){
+			new Swipe(document.getElementById('banner_box'), {
+				speed:500,
+				auto:3000,
+				callback: function(){
+					var lis = $(this.element).next("ol").children();
+					lis.removeClass("on").eq(this.index).addClass("on");
+				}
+			});
+		});
+</script>
+</head>
+
+<body>
+<div class="body">
+  <p class="logo-gd"><a href="#"><img src="images/sylogo.png" alt="首页logo"></a></p>
+  <div class="btnbg-gd"><a href="#">斑&nbsp;&nbsp;鱼&nbsp;&nbsp;馆</a><a href="#">干锅鸭头</a></div>
+  <ul class="clearfix synav-gd">
+    <li class="syn1-gd floatl"><a href="#"><img src="images/sydh1.png" alt="会员"></a></li>
+    <li class="syn2-gd floatl"><a href="#"><img src="images/sydh2.png" alt="活动"></a></li>
+    <li class="syn3-gd floatl"><a href="#"><img src="images/sydh3.png" alt="店面"></a></li>
+    <li class="syn4-gd floatl"><a href="#"><img src="images/sydh4.png" alt="团队"></a></li>    
+  </ul>
+  <h3 class="sytit-gd">最新活动</h3>
+  <ul class="sylist-gd">
+  	<li><a href="#">&bull;&nbsp;有历史的湖北菜 外酥里嫩的招牌干锅鸭 新浪福建</a></li>
+    <li><a href="#">&bull;&nbsp;有历史的湖北菜 外酥里嫩的招牌干锅鸭 新浪福建</a></li>
+    <li><a href="#">&bull;&nbsp;有历史的湖北菜 外酥里嫩的招牌干锅鸭 新浪福建</a></li>
+    <li><a href="#">&bull;&nbsp;有历史的湖北菜 外酥里嫩的招牌干锅鸭 新浪福建</a></li>
+    <li><a href="#">&bull;&nbsp;有历史的湖北菜 外酥里嫩的招牌干锅鸭 新浪福建</a></li>
+  </ul>
+  <footer class="syfooter">
+    <ul class="clearfix">
+      <li class="ft1 floatl"><a href="index.html" class="icon-home"></a></li>
+      <li class="ft2 floatl"><a href="tel:024-31891570">电话</a></li>
+      <li class="ft3 floatl"><a href="#">导航</a></li>
+      <li class="ft4 floatl"><a href="javascript:$('#shareCover').toggleClass('on');">分享</a></li>
+    </ul>
+  </footer>
+  <article id="shareCover" class="share" onclick="$('#shareCover').toggleClass('on')">
+    <table>
+      <tr>
+        <td colspan="2" style="text-align:right;"><img src="images/share_1.png" style="width:120px!important;" /> <img src="images/share_2.png" style="width:30px!important;" /></td>
+      </tr>
+      <tr>
+        <td style="width:50%;"><img src="images/share_4.png" />
+          <div>发送给朋友</div></td>
+        <td><img src="images/share_3.png" />
+          <div>分享到朋友圈</div></td>
+      </tr>
+    </table>
+  </article>
+</div>
+<!--body-->
+</body>
+</html>
